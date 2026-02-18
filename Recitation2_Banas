@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Ultimate College Life Web Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        section:nth-child(even) {
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        section:nth-child(odd) {
+            background-color: rgba(0,0,0,0.15);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-weight: 600;
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        ul, ol {
+            text-align: left;
+            max-width: 400px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 12px;
+            border: 3px solid white;
+            margin: 15px 0;
+        }
+
+        hr {
+            width: 60%;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        button {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffd700;
+            color: black;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: orange;
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <h1>My Ultimate College Life Web Page</h1>
+        <h2><b>Karl Matthew S. Bañas</b></h2>
+        <p><i>kmbanas@gbox.adnu.edu.ph</i></p>
+    </section>
+
+    <section>
+        <h3> Introduction</h3>
+
+        <p>
+            Hello! I am a <b>Computer Science student</b> who enjoys exploring technology and creativity. 
+            My college life revolves around studying, designing, learning new skills, and expressing myself through art and games. 
+            I enjoy improving step by step and discovering new opportunities that help me grow both academically and personally. 
+            College is challenging, but it motivates me to become stronger and better every day.
+        </p>
+    </section>
+
+    <section>
+        <h3> College Must-Haves</h3>
+
+        <ul>
+            <li> Laptop for coding and projects</li>
+            <li> Earphones for music and relaxation</li>
+            <li> Nice clothes for varying weather conditions</li>
+            <li> Phone for communication</li>
+            <li> Internet connection</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3> Daily Routine</h3>
+
+        <ol>
+            <li> Wake up and prepare for classes</li>
+            <li> Attend lectures and learn new concepts</li>
+            <li> Eat and socialize</li>
+            <li> Work on assignments or sometimes practice coding</li>
+            <li> Relax by playing games or drawing</li>
+            <li> Rest and prepare for the next day</li>
+        </ol>
+    </section>
+
+    <section>
+        <h3> Hobbies / Interests</h3>
+
+        <ul>
+            <li> Playing games racing games like <i>Gran Turismo</i> and anything fun in general</li>
+            <li> Listening to music</li>
+            <li> Drawing and Doomscrolling</li>
+            <li> Playing sports like <i>Badminton</i></li>
+            <li> Walking...</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3> Additional Information</h3>
+
+        <p>
+            I continuously improve my programming and creative skills through practice and learning. 
+            I have no idea what to aim for in the future but my goal is to graduate from this course and be able to make use of my learnings and skills in future projects and career path.
+        </p>
+    </section>
+
+    <section>
+        <h3> Interactive Button</h3>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="message"></p>
+    </section>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+            "okay cool";
+        }
+    </script>
+
+</body>
+
+</html>
